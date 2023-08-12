@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EarBot Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+
+<body style="margin: 0;padding: 0; background-color:black">
+
+    <style>
+        .navbar-inverse {
+            margin-bottom: 0;
+            background-color: rgb(192, 76, 76);
+        }
+
+        #five {
+            position: relative;
+            overflow: hidden;
+            height: 350px;
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        #myvideo {
+            width: 100%;
+            background-size: cover;
+            transition: 1s opacity;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 300px;
+        }
+
+        #three {
+            width: 100%;
+            height: 100%;
+        }
+
+        #h1id {
+            color: black;
+            top: 0;
+            right: 20px
+        }
+
+        .carousel-caption {
+            max-width: 550px;
+            padding: 0 20px;
+            margin: 0 auto;
+            margin-top: 200px;
+            margin-right: 20px;
+            text-align: center;
+            top: 0;
+            right: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .gallery_box li {
+            width: 33.333333%;
+            max-width: 100%;
+            display: inline-block;
+            float: left;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery_box {
+            padding: 0;
+            display: flow-root;
+        }
+
+        .gallery_box li:hover img {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .gallery_box li img {
+            -webkit-transition: transform 0.5s ease;
+            -o-transition: transform 0.5s ease;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery_box li:nth-child(odd) .box_data {
+            background: rgba(0, 0, 0, 0.17)
+        }
+
+        .gallery_box li:nth-child(even) .box_data {
+            background: rgba(0, 44, 255, 0.27)
+        }
+
+        .gallery_box .box_data {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #fff;
+        }
+
+        .gallery_box .box_data span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            font-size: 24px;
+        }
+
+        .gallery_box li:hover .box_data {
+            background: rgba(255, 0, 39, 0.55)
+        }
+    </style>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="height: 100px; background-color:black">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="" style="font-weight: 100; "><b>
+                        <h2>
+                            <font color="red">Ear</font>Bot
+                        </h2>
+                    </b></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">
+                        <h4>Audio Products</h4>
+                    </a></li>
+                <li><a href="connect.html">
+                        <h4>Connect</h4>
+                    </a></li>
+                <li><a href="#six">
+                        <h4>Gallery</h4>
+                    </a></li>
+                <li><a href="support.html">
+                        <h4>Support</h4>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: black; " id="two">
+
+        <div id="myCarousel" class="carousel slide">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="imgs/mainslide1.jpg" style="  margin-left: auto; margin-right:auto">
+                </div>
+
+                <div class="item">
+                    <img src="imgs/mainslide2.jpg" style="margin-left: auto; margin-right:auto">
+                </div>
+
+                <div class="item">
+                    <img src="imgs/mainslide3.jpg" style="margin-left: auto; margin-right:auto">
+                </div>
+
+                <div class="item">
+                    <img src="imgs/mainslide1.jpg" style="margin-left: auto; margin-right:auto">
+                </div>
+            </div>
+
+
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <a class="left carousel-control" href="#three" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Prev</span>
+            </a>
+        </div>
+    </div>
+    <div class="container" id="three" style="background-color: rgb(247, 239, 239)">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="imgs/img4.jpg" alt="test" class="img-responsive">
+                <div class="carousel-caption">
+                    <h1 id="h1id">WELCOME TO EARBOT LIFESTYLE</h1>
+                    <p>
+                    <h3 style="text-align: center; text-align: justify;color:black;">EarBot is a lifestyle brand that
+                        deals in fashionable consumer electronics like- earphones, headphones, speakers,travel charger &
+                        premium rugged cables. Our products blend into your daily lilfestyle, almost to the point of
+                        being a fashion accessory and a perfect fit to your ambient surroundings.</h3>
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
+    <ul class="gallery_box" style="background-color:black" id="six">
+        <li>
+            <a href="#0"><img src="imgs/default3.jpg" class="img-responsive"></a>
+
+        </li>
+        <li>
+            <a href="#0"><img src="imgs/default4.jpg" class="img-responsive"></a>
+
+        </li>
+        <li>
+            <a href="#0"><img src="imgs/default5.jpg" class="img-responsive"></a>
+
+        </li>
+        <li>
+            <a href="#0"><img src="imgs/default6.jpg" class="img-responsive"></a>
+
+        </li>
+        <li>
+            <a href="#0"><img src="imgs/default7.jpg" class="img-responsive"></a>
+
+        </li>
+        <li>
+            <a href="#0"><img src="imgs/default8.jpg" class="img-responsive"></a>
+
+        </li>
+
+    </ul>
+
+    <footer class="text-light">
+        <div class="container">
+            <div class="row">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <div class="col-12">
+                            <h2>WE ARE SOCIAL</h2>
+                        </div>
+                        <div class="col-12 social padding">
+                            <a href="#"><i class="fab fa-facebook" style="font-size:70px;"></i></a> &nbsp;&nbsp;&nbsp;
+                            <a href="#"><i class="fab fa-twitter" style="font-size:70px;"></i></a>
+                        </div>
+                    </div><br><br><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

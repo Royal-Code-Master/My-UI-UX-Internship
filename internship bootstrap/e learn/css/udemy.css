@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.pad {
+    padding-top: 20px;
+}
+
+.row1{
+    margin-top: 0%;
+    background: linear-gradient(-45deg, #EC5252 0, #6E1A52 100%);
+}
+
+.feat ,.feat-bel{
+    color : #fff;
+    text-align: center;
+} 
+
+.hero{
+    color : white;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    padding-left: 5em;
+
+}
+
+.hero-text-1{
+    font-size: 65px;
+}
+
+.hero-text-2 {
+    font-size: 23px;
+}
+
+.foot{
+	margin-top:1.5em;
+	color:#fff;
+	background-color : #000;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px 5px #888888;
+}

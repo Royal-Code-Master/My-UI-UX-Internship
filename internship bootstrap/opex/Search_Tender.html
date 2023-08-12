@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="png/image/jpg/jpeg" href="../img/oppexLogo.jpg" />
+    <title>Search engine for public tenders worldwide | OPEXX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/search.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .navbar1 {
+        font-size: 20px;
+        background-color: #2a79ea;
+        /*padding: 10px;*/
+        position: sticky !important;
+        width: 100% !important;
+        /*padding-top: 20px !important;#0fb7ff*/
+        font-family: Bahnschrift;
+
+
+    }
+
+    .btn1 {
+        font-size: 20px !important;
+        padding: 5px !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+        /*margin-top: auto !important;*/
+        /*margin-bottom: auto !important;*/
+        /*margin: auto !important;*/
+        /*float: left !important;*/
+
+    }
+
+
+    .center-content {
+        align-content: center;
+        text-align: center;
+    }
+
+    .form-custom input,
+    select {
+        border-radius: 0px;
+        margin: 1px;
+        height: 50px;
+    }
+
+    .tab-search-div {
+        background-color: #5DBCD2;
+        padding: 0 0 15px 0;
+    }
+
+    .tab-search-div a {
+        color: white;
+    }
+
+    .search_nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #5DBCD2;
+    }
+
+    .search_nav li {
+        display: inline-flex;
+    }
+
+    li a {
+        display: block;
+        color: rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    #winner_hide a {
+        width: 100%;
+    }
+</style>
+
+<body id="search-body-tender">
+
+    <!--<nav class="navbar navbar-expand-sm ">-->
+    <!--<ul class="navbar-nav">-->
+    <!--<li class="nav-item">-->
+    <!--<a class="nav-link btn btn-info" href="startpage.html">OPPEX</a>-->
+    <!--</li>-->
+    <!--<li class="nav-item">-->
+    <!--<a class="nav-link" href="Search_Tender.html">SEARCH</a>-->
+    <!--</li>-->
+    <!--<li class="nav-item">-->
+    <!--<a class="nav-link" href="Pricing.html">PRICING</a>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</nav>-->
+
+
+    <nav class="navbar  navbar-expand-sm navbar1">
+
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class=" nav-link btn btn1 btn-info forOtherComp" href="index.html">OPEXX</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn1 btn-success" href="Search_Tender.html">SEARCH</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn1 btn-success" href="Pricing.html">PRICING</a>
+            </li>
+
+            <!--<li class="nav-item">-->
+            <!--<a class="nav-link btn  btn-success"  href="StartTrial.html">START TRIAL</aclass></a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+            <!--<a class="nav-link btn btn-success" href="Login.html">LOGIN</a>-->
+            <!--</li>-->
+        </ul>
+    </nav>
+
+
+    <div class="tab-search-div">
+
+        <ul class="search_nav center-content">
+            <li><a class="active" href="#">Live Tenders</a></li>
+            <li><a href="Search_Winner.html">Winners</a></li>
+        </ul>
+
+
+        <div id="search_hide" class="center-content container-fluid form-custom">
+            <div class="center-content container">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-8">
+                            <input type="text" class="form-control" placeholder="Keyword">
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="text" class="form-control" placeholder="Location">
+                        </div>
+                    </div>
+
+                    <div id="show_hide1" class="collapse">
+                        <div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" placeholder="Min Value">
+                                </div>
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" placeholder="Max Value">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" placeholder="Buyer Name">
+                                </div>
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" placeholder="CPV">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col">
+                                    <select class="form-control">
+                                        <option disabled selected>Published</option>
+                                        <option>Any Time</option>
+                                        <option>Today</option>
+                                        <option>Within Last 7 Days</option>
+                                        <option>Within Last 30 Days</option>
+                                        <option>Custom Range</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <select class="form-control">
+                                        <option disabled selected>Deadline</option>
+                                        <option>Any Time</option>
+                                        <option>In The Future</option>
+                                        <option>Within 7 Days</option>
+                                        <option>Within 30 Days</option>
+                                        <option>Within a year</option>
+                                        <option>Custom Range</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a data-toggle="collapse" href="#show_hide1">Show More/Less</a>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="center-content">
+        <br>
+        <br>
+        <p class="display-4">9,000,000 tenders at your fingertips.</p>
+        <br>
+        <p style="color: blue;font-size: 26px">Start free trial for 14 days. No credit card needed.</p>
+        <br>
+        <a class="btn btn-success" href="#" style="color: white">START FREE TRIAL</a>
+    </div>
+</body>
+
+</html>

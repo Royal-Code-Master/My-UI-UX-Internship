@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EarBot</title>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .navbar-inverse {
+            margin-bottom: 0;
+            background-color: rgb(192, 76, 76);
+        }
+
+        #five {
+            position: relative;
+            overflow: hidden;
+            height: 350px;
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        #myvideo {
+            width: 100%;
+            background-size: cover;
+            transition: 1s opacity;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 300px;
+        }
+
+        #three {
+            width: 100%;
+            height: 100%;
+        }
+
+        #h1id {
+            color: black;
+            top: 0;
+            right: 20px
+        }
+
+        .carousel-caption {
+            max-width: 550px;
+            padding: 0 20px;
+            margin: 0 auto;
+            margin-top: 200px;
+            margin-right: 20px;
+            text-align: center;
+            top: 0;
+            right: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .gallery_box li {
+            width: 33.333333%;
+            max-width: 100%;
+            display: inline-block;
+            float: left;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery_box {
+            padding: 0;
+            display: flow-root;
+        }
+
+        .gallery_box li:hover img {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .gallery_box li img {
+            -webkit-transition: transform 0.5s ease;
+            -o-transition: transform 0.5s ease;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery_box li:nth-child(odd) .box_data {
+            background: rgba(0, 0, 0, 0.17)
+        }
+
+        .gallery_box li:nth-child(even) .box_data {
+            background: rgba(0, 44, 255, 0.27)
+        }
+
+        .gallery_box .box_data {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #fff;
+        }
+
+        .gallery_box .box_data span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            font-size: 24px;
+        }
+
+        .gallery_box li:hover .box_data {
+            background: rgba(255, 0, 39, 0.55)
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="two.html"><img src="img/earbot_logo.PNG" height="50px"
+                    style="box-sizing: unset;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" style="color:white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:white">Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="height: 100px; background-color:black">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="" style="font-weight: 100; "><b>
+                        <h2>
+                            <font color="red">Ear</font>Bot
+                        </h2>
+                    </b></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">
+                        <h4>Home</h4>
+                    </a></li>
+                <li class="active"><a href="#">
+                        <h4>Audio Products</h4>
+                    </a></li>
+                <li><a href="support.html">
+                        <h4>Support</h4>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--- Image Slider -->
+    <div class="container-fluid" style="background-color: black; " id="two">
+
+        <div id="myCarousel" class="carousel slide">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="imgs/mainslide1.jpg" style="  margin-left: auto; margin-right:auto">
+                </div>
+
+                <div class="item">
+                    <img src="imgs/mainslide2.jpg" style="margin-left: auto; margin-right:auto">
+                </div>
+
+                <div class="item">
+                    <img src="imgs/mainslide3.jpg" style="margin-left: auto; margin-right:auto">
+                </div>
+
+                <div class="item">
+                    <img src="imgs/mainslide1.jpg" style="margin-left: auto; margin-right:auto">
+                </div>
+            </div>
+
+
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <a class="left carousel-control" href="#three" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Prev</span>
+            </a>
+        </div>
+    </div>
+    <!--- Jumbotron -->
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col=lg-9 col-xl-10">
+                <p style="color:black">SPACESHIP GRADE ALUMINUM CASING ENSURES LONG-LASTING DURABILITY AND RELIABLE
+                    CHARGING.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding center-block">
+
+            <hr>
+            <div class="col-md-12 col-lg-12">
+                <h2>Philips SHL3060BK</h2>
+                <p>
+                    This DJ inspired headphone produces powerful sound and bass. The design with rotatable soft ear cups
+                    you enjoy on the go a perfect listening experience.</p>
+            </div>
+            <div class="col-lg-12">
+                <img src="imgs/default1.jpg" class="img-fluid">
+            </div>
+
+
+            <div class="col-lg-12 col-md-12">
+                <h2>Sony MDR-7506</h2>
+                <p style="text-align: left; text-align: justify;">A clear punchy bass, lively mids and defined highs are
+                    part of the sound signature of every DT 240 PRO. Precise and powerful drivers provide high output
+                    levels on all devices such as laptops, cameras and studio interfaces. The DT 240 PRO what developed
+                    for producers, podcasters and filmmakers who want to make the most of their equipment.</p>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <img src="imgs/default2.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!--- Image gallery -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Image Gallery</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!--- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="" src="imgs/default8.jpg">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="" src="imgs/default4.jpg">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="" src="imgs/default5.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>Colors</h2>
+                <p>If you’re looking for an easy way to transform your mood, cue the music.
+
+                    Studies have shown that music can buoy your mood and fend off depression. It can also improve blood
+                    flow in ways similar to statins, lower your levels of stress-related hormones like cortisol and ease
+                    pain. Listening to music before an operation can even improve post-surgery outcomes.</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+    <!--- Fixed background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed"></div>
+        </div>
+    </figure>
+    <!--- Connect -->
+    <footer class="text-light">
+        <div class="container">
+            <div class="row">
+                <div class="container-fluid padding">
+                    <div class="row text-center padding">
+                        <div class="col-12">
+                            <h2>WE ARE SOCIAL</h2>
+                        </div>
+                        <div class="col-12 social padding">
+                            <a href="#"><i class="fab fa-facebook" style="font-size:80px;"></i></a> &nbsp;&nbsp;&nbsp;
+                            <a href="#"><i class="fab fa-twitter" style="font-size:80px;"></i></a>
+                        </div>
+                    </div><br><br><br>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--- Footer -->
+
+</body>
+
+</html>
